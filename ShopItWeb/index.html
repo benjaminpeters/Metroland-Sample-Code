@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+    <html lang = "en-US">
+        
+        <head>
+            <meta charset= "UTF-8">
+            <title>ShopIt</title>
+            <link rel = "stylesheet"
+                  type = "test/css"
+                  href = "search.css" />
+        </head>
+        <body>
+            <h1>Search for clothing</h1>
+            <form action = "search.php"
+                  method = "post">
+                <fieldset>
+                    <label>Search for</label>
+                    <input type = "text"
+                           name = "srchValue" />
+                    <label>in</label>
+                    <select name = "srchField">
+                        <option value = "clothingID">ID</option>
+                        <option value = "name">Name</option>
+                        <option value = "type">Type</option>
+                        <option value = "price">Price</option>
+                    </select>
+                    <button type = "submit" >Submit request</button>
+                </fieldset>
+            </form>
+        </body>
+    </html>
